@@ -1,5 +1,6 @@
 .vscode
 launch.json
-venv london_merged.csv
+venv
+london_merged.csv
 london-bike-sharing-dataset.zip
 tempCodeRunnerFile.py
