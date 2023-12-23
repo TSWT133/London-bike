@@ -1,3 +1,8 @@
+# In CLI
+# pip install pandas
+# pip install kaggle
+# pip install openpyxl
+
 # Importing libraries
 import pandas as pd
 import kaggle
@@ -68,8 +73,10 @@ london_bike_df.holiday = london_bike_df.holiday.map(holiday_dict)
 london_bike_df.weekend = london_bike_df.weekend.astype("str")
 london_bike_df.weekend = london_bike_df.weekend.map(weekend_dict)
 
+# Checking if the mapping has worked
 print(london_bike_df.head())
 
-
+# writing to excel file ready for visualisation in Tableau
+london_bike_df.to_excel("London_bikes_final_version.xlsx", sheet_name="Data")
 
 
